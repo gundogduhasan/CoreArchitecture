@@ -1,0 +1,29 @@
+﻿version: '3.4'
+
+services:
+  CoreArchitecture.api:
+    image: ${DOCKER_REGISTRY-}CoreArchitectureapi
+    build:
+      context: .
+      dockerfile: CoreArchitecture.Api/Dockerfile
+    ports:
+     - "5000:5000" 
+     - "5001:5001" 
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:5001;http://+:5000
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=12
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/aspnetapp.pfx
+      - ConnectionStrings__DefaultConnection=Server=testdb,1433;Database=TestPersonOdataDb;MultipleActiveResultSets=true;User ID=sa;Password=1234qqqQ;TrustServerCertificate=True;
+    volumes:
+      - ~/.aspnet/https:/https:ro
+    depends_on:
+      - testdb
+  testdb:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=1234qqqQ
+    ports:
+      - "1434:1433"
+  

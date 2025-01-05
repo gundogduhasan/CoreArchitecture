@@ -1,0 +1,2003 @@
+{
+	"info": {
+		"_postman_id": "d581f7c8-6e55-4858-b3a1-01108d16ae58",
+		"name": "CoreArchitecture.Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4786634"
+	},
+	"item": [
+		{
+			"name": "odata",
+			"item": [
+				{
+					"name": "api",
+					"item": [
+						{
+							"name": "ODataDefault",
+							"item": [
+								{
+									"name": "odata/api/ get",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json;odata.metadata=minimal;odata.streaming=true"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/odata/api",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"odata",
+												"api"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json;odata.metadata=minimal;odata.streaming=true"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/odata/api",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"odata",
+														"api"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"typeAnnotation\": {\n    \"typeName\": \"<string>\"\n  },\n  \"entitySets\": [\n    {\n      \"typeAnnotation\": {\n        \"typeName\": \"<string>\"\n      },\n      \"url\": \"<uri>\",\n      \"name\": \"<string>\",\n      \"title\": \"<string>\"\n    },\n    {\n      \"typeAnnotation\": {\n        \"typeName\": \"<string>\"\n      },\n      \"url\": \"<uri>\",\n      \"name\": \"<string>\",\n      \"title\": \"<string>\"\n    }\n  ],\n  \"singletons\": [\n    {\n      \"typeAnnotation\": {\n        \"typeName\": \"<string>\"\n      },\n      \"url\": \"<uri>\",\n      \"name\": \"<string>\",\n      \"title\": \"<string>\"\n    },\n    {\n      \"typeAnnotation\": {\n        \"typeName\": \"<string>\"\n      },\n      \"url\": \"<uri>\",\n      \"name\": \"<string>\",\n      \"title\": \"<string>\"\n    }\n  ],\n  \"functionImports\": [\n    {\n      \"typeAnnotation\": {\n        \"typeName\": \"<string>\"\n      },\n      \"url\": \"<uri>\",\n      \"name\": \"<string>\",\n      \"title\": \"<string>\"\n    },\n    {\n      \"typeAnnotation\": {\n        \"typeName\": \"<string>\"\n      },\n      \"url\": \"<uri>\",\n      \"name\": \"<string>\",\n      \"title\": \"<string>\"\n    }\n  ]\n}"
+										}
+									]
+								},
+								{
+									"name": "odata/api/$metadata get",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json;odata.metadata=minimal;odata.streaming=true"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/odata/api/$metadata",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"odata",
+												"api",
+												"$metadata"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json;odata.metadata=minimal;odata.streaming=true"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/odata/api/$metadata",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"odata",
+														"api",
+														"$metadata"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"schemaElements\": [\n    {\n      \"name\": \"<string>\",\n      \"schemaElementKind\": 1,\n      \"namespace\": \"<string>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"schemaElementKind\": 0,\n      \"namespace\": \"<string>\"\n    }\n  ],\n  \"vocabularyAnnotations\": [\n    {\n      \"qualifier\": \"<string>\",\n      \"term\": {\n        \"name\": \"<string>\",\n        \"schemaElementKind\": 0,\n        \"namespace\": \"<string>\",\n        \"type\": {\n          \"isNullable\": \"<boolean>\",\n          \"definition\": {\n            \"typeKind\": 0\n          }\n        },\n        \"appliesTo\": \"<string>\",\n        \"defaultValue\": \"<string>\"\n      },\n      \"target\": {},\n      \"value\": {\n        \"expressionKind\": 6\n      },\n      \"usesDefault\": \"<boolean>\"\n    },\n    {\n      \"qualifier\": \"<string>\",\n      \"term\": {\n        \"name\": \"<string>\",\n        \"schemaElementKind\": 3,\n        \"namespace\": \"<string>\",\n        \"type\": {\n          \"isNullable\": \"<boolean>\",\n          \"definition\": {\n            \"typeKind\": 1\n          }\n        },\n        \"appliesTo\": \"<string>\",\n        \"defaultValue\": \"<string>\"\n      },\n      \"target\": {},\n      \"value\": {\n        \"expressionKind\": 12\n      },\n      \"usesDefault\": \"<boolean>\"\n    }\n  ],\n  \"referencedModels\": [\n    {\n      \"value\": \"<Circular reference to #/components/schemas/IEdmModel detected>\"\n    },\n    {\n      \"value\": \"<Circular reference to #/components/schemas/IEdmModel detected>\"\n    }\n  ],\n  \"declaredNamespaces\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"directValueAnnotationsManager\": {},\n  \"entityContainer\": {\n    \"name\": \"<string>\",\n    \"schemaElementKind\": 2,\n    \"namespace\": \"<string>\",\n    \"elements\": [\n      {\n        \"name\": \"<string>\",\n        \"containerElementKind\": 4,\n        \"container\": {\n          \"value\": \"<Circular reference to #/components/schemas/IEdmEntityContainer detected>\"\n        }\n      },\n      {\n        \"name\": \"<string>\",\n        \"containerElementKind\": 4,\n        \"container\": {\n          \"value\": \"<Circular reference to #/components/schemas/IEdmEntityContainer detected>\"\n        }\n      }\n    ]\n  }\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "TestDepartment",
+							"item": [
+								{
+									"name": "GetDepartmentCount",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/odata/api/TestDepartment/$count",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"odata",
+												"api",
+												"TestDepartment",
+												"$count"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/odata/api/TestDepartment/$count",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"odata",
+														"api",
+														"TestDepartment",
+														"$count"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "GetDepartmentList",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"var responseData = pm.response.json().value;\r",
+													"\r",
+													"if (responseData && responseData.length > 0) {\r",
+													"    var lastItemId = responseData[responseData.length - 1].id; // Son elemanın id'sini alır   \r",
+													"    var firstItem = responseData[0].id;\r",
+													"    pm.collectionVariables.set(\"firstDepartmentId\",firstItem);\r",
+													"    pm.collectionVariables.set(\"lastDepartmentId\", lastItemId);\r",
+													"     // Environment değişkeni olarak kaydeder\r",
+													"}\r",
+													"console.log(\"last item id\", pm.collectionVariables.get(\"lastItemId\"));\r",
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/odata/api/TestDepartment",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"odata",
+												"api",
+												"TestDepartment"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/odata/api/TestDepartment",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"odata",
+														"api",
+														"TestDepartment"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "GetSingleDepartmentByKey",
+									"event": [
+										{
+											"listen": "prerequest",
+											"script": {
+												"exec": [
+													"console.log(pm.collectionVariables.get(\"firstItem\"))"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/odata/api/TestDepartment({{firstDepartmentId}})",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"odata",
+												"api",
+												"TestDepartment({{firstDepartmentId}})"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/odata/api/TestDepartment({{key}})",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"odata",
+														"api",
+														"TestDepartment({{key}})"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "PostDepartment",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\": \">Satış\",\n    \"order\": 2,\n    \"creatorUserId\": \"00000000-0000-0000-0000-000000000000\",\n    \"modifierUserId\": null,\n    \"createdDate\": \"2024-12-11T14:04:23.6241274+03:00\",\n    \"modificationDate\": \"2024-12-11T00:01:06.96+03:00\",\n    \"isDeleted\": false,\n    \"isActive\": true\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/odata/api/TestDepartment",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"odata",
+												"api",
+												"TestDepartment"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"id\": \"<uuid>\",\n  \"name\": \"<string>\",\n  \"isDeleted\": \"<boolean>\",\n  \"isActive\": \"<boolean>\",\n  \"creatorUserId\": \"<uuid>\",\n  \"modifierUserId\": \"<uuid>\",\n  \"createdDate\": \"<dateTime>\",\n  \"modificationDate\": \"<dateTime>\",\n  \"order\": \"<integer>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/odata/api/TestDepartment",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"odata",
+														"api",
+														"TestDepartment"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "PatchDepartment",
+									"request": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\": \"İnsan Kaynakları_Test patch odata\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/odata/api/TestDepartment({{firstDepartmentId}})",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"odata",
+												"api",
+												"TestDepartment({{firstDepartmentId}})"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "PATCH",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"kind\": 3,\n  \"structuredType\": {\n    \"memberType\": 128,\n    \"assembly\": {\n      \"entryPoint\": {\n        \"declaringType\": {\n          \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n        },\n        \"reflectedType\": {\n          \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n        },\n        \"module\": {\n          \"value\": \"<Circular reference to #/components/schemas/Module detected>\"\n        },\n        \"attributes\": 53248,\n        \"methodImplementationFlags\": 3,\n        \"callingConvention\": 64,\n        \"methodHandle\": {\n          \"value\": {}\n        },\n        \"memberType\": 4,\n        \"returnParameter\": {\n          \"attributes\": 8,\n          \"member\": {\n            \"memberType\": 1,\n            \"declaringType\": {\n              \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n            },\n            \"reflectedType\": {\n              \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n            },\n            \"module\": {\n              \"value\": \"<Circular reference to #/components/schemas/Module detected>\"\n            }\n          },\n          \"parameterType\": {\n            \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n          }\n        },\n        \"returnType\": {\n          \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n        },\n        \"returnTypeCustomAttributes\": {}\n      },\n      \"manifestModule\": {\n        \"value\": \"<Circular reference to #/components/schemas/Module detected>\"\n      },\n      \"securityRuleSet\": 2\n    },\n    \"module\": {\n      \"assembly\": {\n        \"entryPoint\": {\n          \"declaringType\": {\n            \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n          },\n          \"reflectedType\": {\n            \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n          },\n          \"module\": {\n            \"value\": \"<Circular reference to #/components/schemas/Module detected>\"\n          },\n          \"attributes\": 3,\n          \"methodImplementationFlags\": 256,\n          \"callingConvention\": 1,\n          \"methodHandle\": {\n            \"value\": {}\n          },\n          \"memberType\": 8,\n          \"returnParameter\": {\n            \"attributes\": 0,\n            \"member\": {\n              \"memberType\": 1,\n              \"declaringType\": {\n                \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n              },\n              \"reflectedType\": {\n                \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n              },\n              \"module\": {\n                \"value\": \"<Circular reference to #/components/schemas/Module detected>\"\n              }\n            },\n            \"parameterType\": {\n              \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n            }\n          },\n          \"returnType\": {\n            \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n          },\n          \"returnTypeCustomAttributes\": {}\n        },\n        \"manifestModule\": {\n          \"value\": \"<Circular reference to #/components/schemas/Module detected>\"\n        },\n        \"securityRuleSet\": 0\n      },\n      \"moduleHandle\": {}\n    },\n    \"declaringType\": {\n      \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n    },\n    \"declaringMethod\": {\n      \"memberType\": 191,\n      \"declaringType\": {\n        \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n      },\n      \"reflectedType\": {\n        \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n      },\n      \"module\": {\n        \"value\": \"<Circular reference to #/components/schemas/Module detected>\"\n      },\n      \"attributes\": 2048,\n      \"methodImplementationFlags\": 0,\n      \"callingConvention\": 2,\n      \"methodHandle\": {\n        \"value\": {}\n      }\n    },\n    \"reflectedType\": {\n      \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n    },\n    \"underlyingSystemType\": {\n      \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n    },\n    \"genericParameterAttributes\": 0,\n    \"attributes\": 8192,\n    \"structLayoutAttribute\": {\n      \"value\": 3\n    },\n    \"typeInitializer\": {\n      \"declaringType\": {\n        \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n      },\n      \"reflectedType\": {\n        \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n      },\n      \"module\": {\n        \"assembly\": {\n          \"entryPoint\": {\n            \"declaringType\": {\n              \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n            },\n            \"reflectedType\": {\n              \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n            },\n            \"module\": {\n              \"value\": \"<Circular reference to #/components/schemas/Module detected>\"\n            },\n            \"attributes\": 7,\n            \"methodImplementationFlags\": 1,\n            \"callingConvention\": 2,\n            \"methodHandle\": {\n              \"value\": {}\n            },\n            \"memberType\": 191,\n            \"returnParameter\": {\n              \"attributes\": 4,\n              \"member\": {\n                \"memberType\": 4,\n                \"declaringType\": {\n                  \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n                },\n                \"reflectedType\": {\n                  \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n                },\n                \"module\": {\n                  \"value\": \"<Circular reference to #/components/schemas/Module detected>\"\n                }\n              },\n              \"parameterType\": {\n                \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n              }\n            },\n            \"returnType\": {\n              \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n            },\n            \"returnTypeCustomAttributes\": {}\n          },\n          \"manifestModule\": {\n            \"value\": \"<Circular reference to #/components/schemas/Module detected>\"\n          },\n          \"securityRuleSet\": 2\n        },\n        \"moduleHandle\": {}\n      },\n      \"attributes\": 8,\n      \"methodImplementationFlags\": 8,\n      \"callingConvention\": 64,\n      \"methodHandle\": {\n        \"value\": {}\n      },\n      \"memberType\": 1\n    },\n    \"typeHandle\": {\n      \"value\": {}\n    },\n    \"baseType\": {\n      \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n    }\n  },\n  \"expectedClrType\": {\n    \"memberType\": 191,\n    \"assembly\": {\n      \"entryPoint\": {\n        \"declaringType\": {\n          \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n        },\n        \"reflectedType\": {\n          \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n        },\n        \"module\": {\n          \"value\": \"<Circular reference to #/components/schemas/Module detected>\"\n        },\n        \"attributes\": 7,\n        \"methodImplementationFlags\": 0,\n        \"callingConvention\": 64,\n        \"methodHandle\": {\n          \"value\": {}\n        },\n        \"memberType\": 4,\n        \"returnParameter\": {\n          \"attributes\": 8,\n          \"member\": {\n            \"memberType\": 32,\n            \"declaringType\": {\n              \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n            },\n            \"reflectedType\": {\n              \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n            },\n            \"module\": {\n              \"value\": \"<Circular reference to #/components/schemas/Module detected>\"\n            }\n          },\n          \"parameterType\": {\n            \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n          }\n        },\n        \"returnType\": {\n          \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n        },\n        \"returnTypeCustomAttributes\": {}\n      },\n      \"manifestModule\": {\n        \"value\": \"<Circular reference to #/components/schemas/Module detected>\"\n      },\n      \"securityRuleSet\": 1\n    },\n    \"module\": {\n      \"assembly\": {\n        \"entryPoint\": {\n          \"declaringType\": {\n            \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n          },\n          \"reflectedType\": {\n            \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n          },\n          \"module\": {\n            \"value\": \"<Circular reference to #/components/schemas/Module detected>\"\n          },\n          \"attributes\": 1024,\n          \"methodImplementationFlags\": 65535,\n          \"callingConvention\": 2,\n          \"methodHandle\": {\n            \"value\": {}\n          },\n          \"memberType\": 8,\n          \"returnParameter\": {\n            \"attributes\": 2,\n            \"member\": {\n              \"memberType\": 2,\n              \"declaringType\": {\n                \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n              },\n              \"reflectedType\": {\n                \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n              },\n              \"module\": {\n                \"value\": \"<Circular reference to #/components/schemas/Module detected>\"\n              }\n            },\n            \"parameterType\": {\n              \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n            }\n          },\n          \"returnType\": {\n            \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n          },\n          \"returnTypeCustomAttributes\": {}\n        },\n        \"manifestModule\": {\n          \"value\": \"<Circular reference to #/components/schemas/Module detected>\"\n        },\n        \"securityRuleSet\": 1\n      },\n      \"moduleHandle\": {}\n    },\n    \"declaringType\": {\n      \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n    },\n    \"declaringMethod\": {\n      \"memberType\": 4,\n      \"declaringType\": {\n        \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n      },\n      \"reflectedType\": {\n        \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n      },\n      \"module\": {\n        \"value\": \"<Circular reference to #/components/schemas/Module detected>\"\n      },\n      \"attributes\": 4,\n      \"methodImplementationFlags\": 8,\n      \"callingConvention\": 32,\n      \"methodHandle\": {\n        \"value\": {}\n      }\n    },\n    \"reflectedType\": {\n      \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n    },\n    \"underlyingSystemType\": {\n      \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n    },\n    \"genericParameterAttributes\": 3,\n    \"attributes\": 262144,\n    \"structLayoutAttribute\": {\n      \"value\": 0\n    },\n    \"typeInitializer\": {\n      \"declaringType\": {\n        \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n      },\n      \"reflectedType\": {\n        \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n      },\n      \"module\": {\n        \"assembly\": {\n          \"entryPoint\": {\n            \"declaringType\": {\n              \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n            },\n            \"reflectedType\": {\n              \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n            },\n            \"module\": {\n              \"value\": \"<Circular reference to #/components/schemas/Module detected>\"\n            },\n            \"attributes\": 16,\n            \"methodImplementationFlags\": 2,\n            \"callingConvention\": 32,\n            \"methodHandle\": {\n              \"value\": {}\n            },\n            \"memberType\": 191,\n            \"returnParameter\": {\n              \"attributes\": 32768,\n              \"member\": {\n                \"memberType\": 2,\n                \"declaringType\": {\n                  \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n                },\n                \"reflectedType\": {\n                  \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n                },\n                \"module\": {\n                  \"value\": \"<Circular reference to #/components/schemas/Module detected>\"\n                }\n              },\n              \"parameterType\": {\n                \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n              }\n            },\n            \"returnType\": {\n              \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n            },\n            \"returnTypeCustomAttributes\": {}\n          },\n          \"manifestModule\": {\n            \"value\": \"<Circular reference to #/components/schemas/Module detected>\"\n          },\n          \"securityRuleSet\": 2\n        },\n        \"moduleHandle\": {}\n      },\n      \"attributes\": 6,\n      \"methodImplementationFlags\": 256,\n      \"callingConvention\": 3,\n      \"methodHandle\": {\n        \"value\": {}\n      },\n      \"memberType\": 2\n    },\n    \"typeHandle\": {\n      \"value\": {}\n    },\n    \"baseType\": {\n      \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n    }\n  }\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/odata/api/TestDepartment({{key}})",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"odata",
+														"api",
+														"TestDepartment({{key}})"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "PutDepartment",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\": \"İnsan Kaynakları_Test Put odata\",\n    \"order\": 2,\n    \"creatorUserId\": \"00000000-0000-0000-0000-000000000000\",\n    \"modifierUserId\": null,\n    \"createdDate\": \"2024-12-11T14:04:23.6241274+03:00\",\n    \"modificationDate\": \"2024-12-11T00:01:06.96+03:00\",\n    \"id\":\"{{lastDepartmentId}}\",\n    \"isDeleted\": false,\n    \"isActive\": true\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/odata/api/TestDepartment({{lastDepartmentId}})",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"odata",
+												"api",
+												"TestDepartment({{lastDepartmentId}})"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"id\": \"<uuid>\",\n  \"name\": \"<string>\",\n  \"isDeleted\": \"<boolean>\",\n  \"isActive\": \"<boolean>\",\n  \"creatorUserId\": \"<uuid>\",\n  \"modifierUserId\": \"<uuid>\",\n  \"createdDate\": \"<dateTime>\",\n  \"modificationDate\": \"<dateTime>\",\n  \"order\": \"<integer>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/odata/api/TestDepartment({{key}})",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"odata",
+														"api",
+														"TestDepartment({{key}})"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "DeleteDepartment",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/odata/api/TestDepartment({{lastDepartmentId}})",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"odata",
+												"api",
+												"TestDepartment({{lastDepartmentId}})"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/odata/api/TestDepartment({{key}})",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"odata",
+														"api",
+														"TestDepartment({{key}})"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "TestPerson",
+							"item": [
+								{
+									"name": "GetPersonCount",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/odata/api/TestPerson/$count",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"odata",
+												"api",
+												"TestPerson",
+												"$count"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/odata/api/TestPerson/$count",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"odata",
+														"api",
+														"TestPerson",
+														"$count"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "GetPersonList",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"var responseData = pm.response.json().value;\r",
+													"\r",
+													"if (responseData && responseData.length > 0) {\r",
+													"    var lastItemId = responseData[responseData.length - 1].id; // Son elemanın id'sini alır   \r",
+													"    var firstItem = responseData[0].id;\r",
+													"    pm.collectionVariables.set(\"firstPersonId\",firstItem);\r",
+													"    pm.collectionVariables.set(\"lastPersonId\", lastItemId); // Environment değişkeni olarak kaydeder\r",
+													"}"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/odata/api/TestPerson",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"odata",
+												"api",
+												"TestPerson"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/odata/api/TestPerson",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"odata",
+														"api",
+														"TestPerson"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "PostPerson",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\": \"Mahmut\",\n    \"lastname\": \"Çelik\",\n    \"salary\": 12500,\n    \"departmentId\": \"{{firstDepartmentId}}\",\n    \"creatorUserId\": \"00000000-0000-0000-0000-000000000000\",\n    \"modifierUserId\": null,\n    \"createdDate\": \"2024-12-26T14:24:01.7599342+03:00\",\n    \"modificationDate\": \"2024-12-11T00:02:50.1366667+03:00\",\n    \"isDeleted\": false,\n    \"isActive\": true\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/odata/api/TestPerson",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"odata",
+												"api",
+												"TestPerson"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"id\": \"<uuid>\",\n  \"lastname\": \"<string>\",\n  \"name\": \"<string>\",\n  \"isDeleted\": \"<boolean>\",\n  \"isActive\": \"<boolean>\",\n  \"creatorUserId\": \"<uuid>\",\n  \"modifierUserId\": \"<uuid>\",\n  \"createdDate\": \"<dateTime>\",\n  \"modificationDate\": \"<dateTime>\",\n  \"salary\": \"<integer>\",\n  \"departmentId\": \"<uuid>\",\n  \"departmentName\": \"<string>\",\n  \"personDepartment\": {\n    \"id\": \"<uuid>\",\n    \"name\": \"<string>\",\n    \"isDeleted\": \"<boolean>\",\n    \"isActive\": \"<boolean>\",\n    \"creatorUserId\": \"<uuid>\",\n    \"modifierUserId\": \"<uuid>\",\n    \"createdDate\": \"<dateTime>\",\n    \"modificationDate\": \"<dateTime>\",\n    \"order\": \"<integer>\"\n  }\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/odata/api/TestPerson",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"odata",
+														"api",
+														"TestPerson"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "GetSinglePersonByKey",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/odata/api/TestPerson({{firstPersonId}})",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"odata",
+												"api",
+												"TestPerson({{firstPersonId}})"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/odata/api/TestPerson({{key}})",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"odata",
+														"api",
+														"TestPerson({{key}})"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "PatchPerson",
+									"request": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\": \"Hasan_test_PATCH_api odata\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/odata/api/TestPerson({{lastPersonId}})",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"odata",
+												"api",
+												"TestPerson({{lastPersonId}})"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "PATCH",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"kind\": 3,\n  \"structuredType\": {\n    \"memberType\": 128,\n    \"assembly\": {\n      \"entryPoint\": {\n        \"declaringType\": {\n          \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n        },\n        \"reflectedType\": {\n          \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n        },\n        \"module\": {\n          \"value\": \"<Circular reference to #/components/schemas/Module detected>\"\n        },\n        \"attributes\": 53248,\n        \"methodImplementationFlags\": 3,\n        \"callingConvention\": 64,\n        \"methodHandle\": {\n          \"value\": {}\n        },\n        \"memberType\": 4,\n        \"returnParameter\": {\n          \"attributes\": 8,\n          \"member\": {\n            \"memberType\": 1,\n            \"declaringType\": {\n              \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n            },\n            \"reflectedType\": {\n              \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n            },\n            \"module\": {\n              \"value\": \"<Circular reference to #/components/schemas/Module detected>\"\n            }\n          },\n          \"parameterType\": {\n            \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n          }\n        },\n        \"returnType\": {\n          \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n        },\n        \"returnTypeCustomAttributes\": {}\n      },\n      \"manifestModule\": {\n        \"value\": \"<Circular reference to #/components/schemas/Module detected>\"\n      },\n      \"securityRuleSet\": 2\n    },\n    \"module\": {\n      \"assembly\": {\n        \"entryPoint\": {\n          \"declaringType\": {\n            \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n          },\n          \"reflectedType\": {\n            \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n          },\n          \"module\": {\n            \"value\": \"<Circular reference to #/components/schemas/Module detected>\"\n          },\n          \"attributes\": 3,\n          \"methodImplementationFlags\": 256,\n          \"callingConvention\": 1,\n          \"methodHandle\": {\n            \"value\": {}\n          },\n          \"memberType\": 8,\n          \"returnParameter\": {\n            \"attributes\": 0,\n            \"member\": {\n              \"memberType\": 1,\n              \"declaringType\": {\n                \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n              },\n              \"reflectedType\": {\n                \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n              },\n              \"module\": {\n                \"value\": \"<Circular reference to #/components/schemas/Module detected>\"\n              }\n            },\n            \"parameterType\": {\n              \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n            }\n          },\n          \"returnType\": {\n            \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n          },\n          \"returnTypeCustomAttributes\": {}\n        },\n        \"manifestModule\": {\n          \"value\": \"<Circular reference to #/components/schemas/Module detected>\"\n        },\n        \"securityRuleSet\": 0\n      },\n      \"moduleHandle\": {}\n    },\n    \"declaringType\": {\n      \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n    },\n    \"declaringMethod\": {\n      \"memberType\": 191,\n      \"declaringType\": {\n        \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n      },\n      \"reflectedType\": {\n        \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n      },\n      \"module\": {\n        \"value\": \"<Circular reference to #/components/schemas/Module detected>\"\n      },\n      \"attributes\": 2048,\n      \"methodImplementationFlags\": 0,\n      \"callingConvention\": 2,\n      \"methodHandle\": {\n        \"value\": {}\n      }\n    },\n    \"reflectedType\": {\n      \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n    },\n    \"underlyingSystemType\": {\n      \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n    },\n    \"genericParameterAttributes\": 0,\n    \"attributes\": 8192,\n    \"structLayoutAttribute\": {\n      \"value\": 3\n    },\n    \"typeInitializer\": {\n      \"declaringType\": {\n        \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n      },\n      \"reflectedType\": {\n        \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n      },\n      \"module\": {\n        \"assembly\": {\n          \"entryPoint\": {\n            \"declaringType\": {\n              \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n            },\n            \"reflectedType\": {\n              \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n            },\n            \"module\": {\n              \"value\": \"<Circular reference to #/components/schemas/Module detected>\"\n            },\n            \"attributes\": 7,\n            \"methodImplementationFlags\": 1,\n            \"callingConvention\": 2,\n            \"methodHandle\": {\n              \"value\": {}\n            },\n            \"memberType\": 191,\n            \"returnParameter\": {\n              \"attributes\": 4,\n              \"member\": {\n                \"memberType\": 4,\n                \"declaringType\": {\n                  \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n                },\n                \"reflectedType\": {\n                  \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n                },\n                \"module\": {\n                  \"value\": \"<Circular reference to #/components/schemas/Module detected>\"\n                }\n              },\n              \"parameterType\": {\n                \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n              }\n            },\n            \"returnType\": {\n              \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n            },\n            \"returnTypeCustomAttributes\": {}\n          },\n          \"manifestModule\": {\n            \"value\": \"<Circular reference to #/components/schemas/Module detected>\"\n          },\n          \"securityRuleSet\": 2\n        },\n        \"moduleHandle\": {}\n      },\n      \"attributes\": 8,\n      \"methodImplementationFlags\": 8,\n      \"callingConvention\": 64,\n      \"methodHandle\": {\n        \"value\": {}\n      },\n      \"memberType\": 1\n    },\n    \"typeHandle\": {\n      \"value\": {}\n    },\n    \"baseType\": {\n      \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n    }\n  },\n  \"expectedClrType\": {\n    \"memberType\": 191,\n    \"assembly\": {\n      \"entryPoint\": {\n        \"declaringType\": {\n          \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n        },\n        \"reflectedType\": {\n          \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n        },\n        \"module\": {\n          \"value\": \"<Circular reference to #/components/schemas/Module detected>\"\n        },\n        \"attributes\": 7,\n        \"methodImplementationFlags\": 0,\n        \"callingConvention\": 64,\n        \"methodHandle\": {\n          \"value\": {}\n        },\n        \"memberType\": 4,\n        \"returnParameter\": {\n          \"attributes\": 8,\n          \"member\": {\n            \"memberType\": 32,\n            \"declaringType\": {\n              \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n            },\n            \"reflectedType\": {\n              \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n            },\n            \"module\": {\n              \"value\": \"<Circular reference to #/components/schemas/Module detected>\"\n            }\n          },\n          \"parameterType\": {\n            \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n          }\n        },\n        \"returnType\": {\n          \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n        },\n        \"returnTypeCustomAttributes\": {}\n      },\n      \"manifestModule\": {\n        \"value\": \"<Circular reference to #/components/schemas/Module detected>\"\n      },\n      \"securityRuleSet\": 1\n    },\n    \"module\": {\n      \"assembly\": {\n        \"entryPoint\": {\n          \"declaringType\": {\n            \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n          },\n          \"reflectedType\": {\n            \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n          },\n          \"module\": {\n            \"value\": \"<Circular reference to #/components/schemas/Module detected>\"\n          },\n          \"attributes\": 1024,\n          \"methodImplementationFlags\": 65535,\n          \"callingConvention\": 2,\n          \"methodHandle\": {\n            \"value\": {}\n          },\n          \"memberType\": 8,\n          \"returnParameter\": {\n            \"attributes\": 2,\n            \"member\": {\n              \"memberType\": 2,\n              \"declaringType\": {\n                \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n              },\n              \"reflectedType\": {\n                \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n              },\n              \"module\": {\n                \"value\": \"<Circular reference to #/components/schemas/Module detected>\"\n              }\n            },\n            \"parameterType\": {\n              \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n            }\n          },\n          \"returnType\": {\n            \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n          },\n          \"returnTypeCustomAttributes\": {}\n        },\n        \"manifestModule\": {\n          \"value\": \"<Circular reference to #/components/schemas/Module detected>\"\n        },\n        \"securityRuleSet\": 1\n      },\n      \"moduleHandle\": {}\n    },\n    \"declaringType\": {\n      \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n    },\n    \"declaringMethod\": {\n      \"memberType\": 4,\n      \"declaringType\": {\n        \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n      },\n      \"reflectedType\": {\n        \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n      },\n      \"module\": {\n        \"value\": \"<Circular reference to #/components/schemas/Module detected>\"\n      },\n      \"attributes\": 4,\n      \"methodImplementationFlags\": 8,\n      \"callingConvention\": 32,\n      \"methodHandle\": {\n        \"value\": {}\n      }\n    },\n    \"reflectedType\": {\n      \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n    },\n    \"underlyingSystemType\": {\n      \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n    },\n    \"genericParameterAttributes\": 3,\n    \"attributes\": 262144,\n    \"structLayoutAttribute\": {\n      \"value\": 0\n    },\n    \"typeInitializer\": {\n      \"declaringType\": {\n        \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n      },\n      \"reflectedType\": {\n        \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n      },\n      \"module\": {\n        \"assembly\": {\n          \"entryPoint\": {\n            \"declaringType\": {\n              \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n            },\n            \"reflectedType\": {\n              \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n            },\n            \"module\": {\n              \"value\": \"<Circular reference to #/components/schemas/Module detected>\"\n            },\n            \"attributes\": 16,\n            \"methodImplementationFlags\": 2,\n            \"callingConvention\": 32,\n            \"methodHandle\": {\n              \"value\": {}\n            },\n            \"memberType\": 191,\n            \"returnParameter\": {\n              \"attributes\": 32768,\n              \"member\": {\n                \"memberType\": 2,\n                \"declaringType\": {\n                  \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n                },\n                \"reflectedType\": {\n                  \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n                },\n                \"module\": {\n                  \"value\": \"<Circular reference to #/components/schemas/Module detected>\"\n                }\n              },\n              \"parameterType\": {\n                \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n              }\n            },\n            \"returnType\": {\n              \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n            },\n            \"returnTypeCustomAttributes\": {}\n          },\n          \"manifestModule\": {\n            \"value\": \"<Circular reference to #/components/schemas/Module detected>\"\n          },\n          \"securityRuleSet\": 2\n        },\n        \"moduleHandle\": {}\n      },\n      \"attributes\": 6,\n      \"methodImplementationFlags\": 256,\n      \"callingConvention\": 3,\n      \"methodHandle\": {\n        \"value\": {}\n      },\n      \"memberType\": 2\n    },\n    \"typeHandle\": {\n      \"value\": {}\n    },\n    \"baseType\": {\n      \"value\": \"<Circular reference to #/components/schemas/Type detected>\"\n    }\n  }\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/odata/api/TestPerson({{key}})",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"odata",
+														"api",
+														"TestPerson({{key}})"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "PutPerson",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\": \"Hasan_test_PUT_api odata\",\n    \"lastname\": \"Çelik\",\n    \"salary\": 12500,\n    \"departmentId\": \"{{firstDepartmentId}}\",\n    \"creatorUserId\": \"00000000-0000-0000-0000-000000000000\",\n    \"modifierUserId\": null,\n    \"createdDate\": \"2024-12-26T14:24:01.7599342+03:00\",\n    \"modificationDate\": \"2024-12-11T00:02:50.1366667+03:00\",\n    \"id\": \"{{lastPersonId}}\",\n    \"isDeleted\": false,\n    \"isActive\": true\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/odata/api/TestPerson({{lastPersonId}})",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"odata",
+												"api",
+												"TestPerson({{lastPersonId}})"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"id\": \"<uuid>\",\n  \"lastname\": \"<string>\",\n  \"name\": \"<string>\",\n  \"isDeleted\": \"<boolean>\",\n  \"isActive\": \"<boolean>\",\n  \"creatorUserId\": \"<uuid>\",\n  \"modifierUserId\": \"<uuid>\",\n  \"createdDate\": \"<dateTime>\",\n  \"modificationDate\": \"<dateTime>\",\n  \"salary\": \"<integer>\",\n  \"departmentId\": \"<uuid>\",\n  \"departmentName\": \"<string>\",\n  \"personDepartment\": {\n    \"id\": \"<uuid>\",\n    \"name\": \"<string>\",\n    \"isDeleted\": \"<boolean>\",\n    \"isActive\": \"<boolean>\",\n    \"creatorUserId\": \"<uuid>\",\n    \"modifierUserId\": \"<uuid>\",\n    \"createdDate\": \"<dateTime>\",\n    \"modificationDate\": \"<dateTime>\",\n    \"order\": \"<integer>\"\n  }\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/odata/api/TestPerson({{key}})",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"odata",
+														"api",
+														"TestPerson({{key}})"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "DeletePerson",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/odata/api/TestPerson({{lastPersonId}})",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"odata",
+												"api",
+												"TestPerson({{lastPersonId}})"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/odata/api/TestPerson({{key}})",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"odata",
+														"api",
+														"TestPerson({{key}})"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "TestDepartmentApi",
+					"item": [
+						{
+							"name": "GetDepartmentList",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var responseData = pm.response.json();\r",
+											"\r",
+											"if (responseData && responseData.length > 0) {\r",
+											"    var lastItemId = responseData[responseData.length - 1].id; // Son elemanın id'sini alır   \r",
+											"    var firstItem = responseData[0].id;\r",
+											"     pm.collectionVariables.set(\"firstDepartmentId\",firstItem);\r",
+											"    pm.collectionVariables.set(\"lastDepartmentId\", lastItemId); // Environment değişkeni olarak kaydeder\r",
+											"}"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/TestDepartmentApi",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"TestDepartmentApi"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/TestDepartmentApi",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"TestDepartmentApi"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "PostDepartment",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Postman Department Test Post\",\n    \"order\": 1,\n    \"creatorUserId\": \"30eeff68-6c72-47df-a794-9b975aa1c7b5\",\n    \"createdDate\": \"2024-12-11T00:01:06.9566667\",\n    \"isDeleted\": false,\n    \"isActive\": true\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/TestDepartmentApi",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"TestDepartmentApi"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": \"<uuid>\",\n  \"name\": \"<string>\",\n  \"isDeleted\": \"<boolean>\",\n  \"isActive\": \"<boolean>\",\n  \"creatorUserId\": \"<uuid>\",\n  \"modifierUserId\": \"<uuid>\",\n  \"createdDate\": \"<dateTime>\",\n  \"modificationDate\": \"<dateTime>\",\n  \"order\": \"<integer>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/TestDepartmentApi",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"TestDepartmentApi"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "GetSingleDepartmentById",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											"console.log(\"lastItemId\",pm.environment.get(\"lastItemId\"));"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/TestDepartmentApi/{{lastDepartmentId}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"TestDepartmentApi",
+										"{{lastDepartmentId}}"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/TestDepartmentApi/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"TestDepartmentApi",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "GetDepartmentWithFilter",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/TestDepartmentApi/filter?Name=Test",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"TestDepartmentApi",
+										"filter"
+									],
+									"query": [
+										{
+											"key": "Name",
+											"value": "Test"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/TestDepartmentApi",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"TestDepartmentApi"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "PatchDepartment",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											"console.log(\"lastItemId\",pm.collectionVariables.get(\"lastItemId\"));"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "[\n    {\n        \"op\": \"replace\",\n        \"path\": \"/Name\",\n        \"value\": \"test_patch_postman_edit\"\n    }\n]",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/TestDepartmentApi/{{lastDepartmentId}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"TestDepartmentApi",
+										"{{lastDepartmentId}}"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"contractResolver\": {}\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/TestDepartmentApi/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"TestDepartmentApi",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "PutDepartment",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"test_put_postman_edit\",\n    \"order\": 1,\n    \"creatorUserId\": \"00000000-0000-0000-0000-000000000000\",\n    \"modifierUserId\": \"00000000-0000-0000-0000-000000000000\",\n    \"createdDate\": \"2024-12-25T14:54:08.5830345\",\n    \"modificationDate\": \"2024-12-25T18:37:54.3838786\",\n    \"id\": \"{{lastDepartmentId}}\",\n    \"isDeleted\": false,\n    \"isActive\": true\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/TestDepartmentApi/{{lastDepartmentId}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"TestDepartmentApi",
+										"{{lastDepartmentId}}"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": \"<uuid>\",\n  \"name\": \"<string>\",\n  \"isDeleted\": \"<boolean>\",\n  \"isActive\": \"<boolean>\",\n  \"creatorUserId\": \"<uuid>\",\n  \"modifierUserId\": \"<uuid>\",\n  \"createdDate\": \"<dateTime>\",\n  \"modificationDate\": \"<dateTime>\",\n  \"order\": \"<integer>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/TestDepartmentApi/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"TestDepartmentApi",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "DeleteDepartment",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/TestDepartmentApi/{{lastDepartmentId}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"TestDepartmentApi",
+										"{{lastDepartmentId}}"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/TestDepartmentApi/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"TestDepartmentApi",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "TestPersonApi",
+					"item": [
+						{
+							"name": "GetPersonList",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var responseData = pm.response.json();\r",
+											"\r",
+											"if (responseData && responseData.length > 0) {\r",
+											"    var lastItemId = responseData[responseData.length - 1].id; // Son elemanın id'sini alır   \r",
+											"    var firstItem = responseData[0].id;\r",
+											"    pm.collectionVariables.set(\"firstPersonId\",firstItem);\r",
+											"    pm.collectionVariables.set(\"lastPersonId\", lastItemId);// Environment değişkeni olarak kaydeder\r",
+											"}"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/TestPersonApi",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"TestPersonApi"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/TestPersonApi",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"TestPersonApi"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "PostPerson",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Hasan_test_post_api\",\n    \"lastname\": \"Çelik\",\n    \"salary\": 12500,\n    \"departmentId\": \"{{firstDepartmentId}}\",\n    \"creatorUserId\": \"8cec124d-9780-4fda-a910-5bbda95ceef3\",\n    \"modifierUserId\": null,\n    \"createdDate\": \"2024-12-11T00:02:50.1366667\",\n    \"modificationDate\": \"2024-12-11T00:02:50.1366667\",\n    \"isDeleted\": false,\n    \"isActive\": true\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/TestPersonApi",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"TestPersonApi"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": \"<uuid>\",\n  \"lastname\": \"<string>\",\n  \"name\": \"<string>\",\n  \"isDeleted\": \"<boolean>\",\n  \"isActive\": \"<boolean>\",\n  \"creatorUserId\": \"<uuid>\",\n  \"modifierUserId\": \"<uuid>\",\n  \"createdDate\": \"<dateTime>\",\n  \"modificationDate\": \"<dateTime>\",\n  \"salary\": \"<integer>\",\n  \"departmentId\": \"<uuid>\",\n  \"departmentName\": \"<string>\",\n  \"personDepartment\": {\n    \"id\": \"<uuid>\",\n    \"name\": \"<string>\",\n    \"isDeleted\": \"<boolean>\",\n    \"isActive\": \"<boolean>\",\n    \"creatorUserId\": \"<uuid>\",\n    \"modifierUserId\": \"<uuid>\",\n    \"createdDate\": \"<dateTime>\",\n    \"modificationDate\": \"<dateTime>\",\n    \"order\": \"<integer>\"\n  }\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/TestPersonApi",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"TestPersonApi"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "GetSinglePersonById",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/TestPersonApi/{{firstPersonId}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"TestPersonApi",
+										"{{firstPersonId}}"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/TestPersonApi/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"TestPersonApi",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "GetPersonWithFilter",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/TestPersonApi/filter?Name=Test",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"TestPersonApi",
+										"filter"
+									],
+									"query": [
+										{
+											"key": "Name",
+											"value": "Test"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/TestPersonApi/filter?et_=<string>&nostrudb60=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"TestPersonApi",
+												"filter"
+											],
+											"query": [
+												{
+													"key": "et_",
+													"value": "<string>"
+												},
+												{
+													"key": "nostrudb60",
+													"value": "<string>"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "PatchPerson",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "[\n    {\n        \"op\": \"replace\",\n        \"path\": \"/Name\",\n        \"value\": \"test_person_patch_postman\"\n    }\n]",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/TestPersonApi/{{lastPersonId}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"TestPersonApi",
+										"{{lastPersonId}}"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"contractResolver\": {}\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/TestPersonApi/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"TestPersonApi",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "PutPerson",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"test_person_put_postman\",\n    \"lastname\": \"Çelik\",\n    \"salary\": 12500,\n    \"departmentId\": \"{{firstDepartmentId}}\",\n    \"departmentName\": null,\n    \"personDepartment\": null,\n    \"creatorUserId\": \"8cec124d-9780-4fda-a910-5bbda95ceef3\",\n    \"modifierUserId\": \"00000000-0000-0000-0000-000000000000\",\n    \"createdDate\": \"2024-12-11T00:02:50.1366667\",\n    \"modificationDate\": \"2024-12-26T14:26:57.1336625\",\n    \"id\": \"{{lastPersonId}}\",\n    \"isDeleted\": false,\n    \"isActive\": true\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/TestPersonApi/{{lastPersonId}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"TestPersonApi",
+										"{{lastPersonId}}"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": \"<uuid>\",\n  \"lastname\": \"<string>\",\n  \"name\": \"<string>\",\n  \"isDeleted\": \"<boolean>\",\n  \"isActive\": \"<boolean>\",\n  \"creatorUserId\": \"<uuid>\",\n  \"modifierUserId\": \"<uuid>\",\n  \"createdDate\": \"<dateTime>\",\n  \"modificationDate\": \"<dateTime>\",\n  \"salary\": \"<integer>\",\n  \"departmentId\": \"<uuid>\",\n  \"departmentName\": \"<string>\",\n  \"personDepartment\": {\n    \"id\": \"<uuid>\",\n    \"name\": \"<string>\",\n    \"isDeleted\": \"<boolean>\",\n    \"isActive\": \"<boolean>\",\n    \"creatorUserId\": \"<uuid>\",\n    \"modifierUserId\": \"<uuid>\",\n    \"createdDate\": \"<dateTime>\",\n    \"modificationDate\": \"<dateTime>\",\n    \"order\": \"<integer>\"\n  }\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/TestPersonApi/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"TestPersonApi",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "DeletePerson",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/TestPersonApi/{{lastPersonId}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"TestPersonApi",
+										"{{lastPersonId}}"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/TestPersonApi/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"TestPersonApi",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://localhost:7251"
+		},
+		{
+			"key": "key",
+			"value": ""
+		},
+		{
+			"key": "firstDepartmentId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "lastDepartmentId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "firstPersonId",
+			"value": ""
+		},
+		{
+			"key": "lastPersonId",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
